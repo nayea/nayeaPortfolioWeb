@@ -1,0 +1,202 @@
+
+@import './help.scss'
+
+
+ul,li,div,span,h1,h2,h3,p
+  margin: 0
+  padding: 0
+  border: 0
+
+li
+  display: block
+a
+  color: #333333
+  text-decoration: none
+
+
+#up
+  width: 10%
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+
+#workARSeeSoul, #workCampfire, #workADFX, #webtime, #webmaverick, #researchWave, #researchMotion
+  margin-left: px2rem(40)
+  margin-right: px2rem(40)
+
+.title
+  span
+    position: relative
+  span::before
+    display: inline-block
+    content: ""
+    position: absolute
+    top: px2rem(-8)
+    left: 50%
+    +transform(translateX(-50%))
+    width: px2rem(10)
+    height: px2rem(10)
+    background: $yellow
+    border-radius: 50%
+
+.title-content
+  margin-top: px2rem(20)
+  font-size: px2rem(14)
+
+.content-title
+  h1
+    color: #fff
+    text-shadow: -1px 0 $black, 0 1px $black, 1px 0 $black, 0 -1px $black
+    font-size: px2rem(50)
+    margin-top: px2vw(50, $break-large)
+  span
+    position: relative
+  span::before
+    display: inline-block
+    content: ""
+    position: absolute
+    top: px2rem(-8)
+    left: 50%
+    +transform(translateX(-50%))
+    width: px2rem(10)
+    height: px2rem(10)
+    background: $yellow
+    border-radius: 50%
+
+.second-title
+  padding-top: px2rem(30)
+
+.content-list
+  position: relative
+  margin-top: px2rem(30)
+  a
+    content: ''
+    display: block
+    clear: both
+  li
+    list-style: none
+    position: relative
+    top: 0
+    left: 50%
+    overflow: hidden
+    +transform(translateX(-50%))
+    width: px2rem(400)
+    height: px2rem(240)
+    margin-bottom: px2rem(20)
+    img
+      width: px2rem(400)
+      height: px2rem(240)
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      +transform(translate(-50%,-50%))
+      color: #fff
+      font-size: px2rem(16)
+      text-align: center
+  a::before
+    position: absolute
+    +size(100%)
+    background: rgba(0,0,0,0.3)
+    content: ""
+    display: block
+    top: 0
+    left: 0
+  a:hover::before
+    position: absolute
+    +size(100%)
+    background: rgba(255,193,7,0.9)
+    content: ""
+    display: block
+    top: 0
+    left: 0
+
+
+.content-all
+  margin-top: px2rem(30)
+  margin-bottom: px2rem(50)
+  h2
+    display: inline-block
+    font-size: px2rem(15)
+    width: px2rem(130)
+    color: $yellow
+    // border-right: 2px solid $black
+  li:nth-last-of-type(1)
+    margin-bottom: px2rem(40)
+  li
+    margin-bottom: px2rem(20)
+    span
+      // margin-left: px2rem(30)
+      font-size: px2rem(15)
+      margin-top: px2rem(20)
+      display: block
+    p
+      margin-top: px2rem(20)
+      line-height: 1.6
+      font-size: px2rem(15)
+
+.content-images
+  +flexboxJustify(center)
+  flex-wrap : wrap
+  margin-top: px2rem(10)
+  img
+    margin-top: px2rem(30)
+    margin-left: px2rem(10)
+    margin-right: px2rem(10)
+    width: px2rem(400)
+    height: px2rem(240)
+
+.content-images-2
+  +flexboxJustify(center)
+  flex-wrap : wrap
+  margin-top: px2rem(10)
+  img
+    margin-top: px2rem(30)
+    margin-left: px2rem(10)
+    margin-right: px2rem(10)
+    width: px2rem(400)
+    height: px2rem(300)
+
+
+.video-player
+  position: relative
+  top: 0
+  left: 50%
+  +transform(translateX(-23%))
+
+
+.web-url
+  color: $gray
+.web-url:hover
+  color: $yellow
+
+
+.icon-download::before
+  content: "\e960"
+
+.icon-play3::before
+  content: "\ea1c"
+
+.icon-pause2::before
+  content: "\ea1d"
+
+.icon-stop2::before
+  content: "\ea1e"
+
+.icon-volume-high::before
+  content: "\ea26"
+
+.icon-volume-mute2::before
+  content: "\ea2a"
+
+.icon-paragraph-justify::before
+  content: "\ea7a"
+
+.icon-spinner11::before
+  content: "\e984"
+
+
+.icon-spinner10::before
+  content: "\e983"
+
